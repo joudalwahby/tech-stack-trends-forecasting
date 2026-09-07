@@ -1,10 +1,10 @@
-# 🚀 Tech Stack Trends & Skill Gap Forecasting Platform
+# Tech Stack Trends & Skill Gap Forecasting Platform
 
 An end-to-end data analytics and predictive platform that monitors job market trends, analyzes skill demand distributions, and forecasts future tech stack requirements using Machine Learning algorithms.
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 - **Skill Demand Tracking:** Visualizes historical demand trends for core competencies (AI, SQL, Data Analytics, Python) across multiple tech domains.
 - **Interactive Analytics:** Real-time filtering and dynamic comparative charts powered by Plotly Express.
@@ -13,7 +13,7 @@ An end-to-end data analytics and predictive platform that monitors job market tr
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 
 - **Language:** Python
 - **Web Framework / UI:** Streamlit
@@ -24,7 +24,7 @@ An end-to-end data analytics and predictive platform that monitors job market tr
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository:**
    ```bash
@@ -44,7 +44,7 @@ An end-to-end data analytics and predictive platform that monitors job market tr
 
 ---
 
-## 👤 Author
+##  Author
 
 **Joud Alwahby**
 - Bachelor's Degree in Artificial Intelligence
