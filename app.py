@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🚀 منصة رصد اتجاهات التقنية وتنبؤ المهارات المطلوبة")
+st.title(" منصة رصد اتجاهات التقنية وتنبؤ المهارات المطلوبة")
 st.markdown("""
 منصة تحليلات ذكية ترصد الطلب على التقنيات والمهارات الحالية (مثل الذكاء الاصطناعي، تحليلات البيانات، ونظم المعلومات)، وتتنبأ بالاتجاهات المستقبلية في سوق العمل.
 """)
@@ -31,7 +31,7 @@ except Exception:
     }
     df = pd.DataFrame(data)
 
-st.sidebar.header("🎯 خيارات التصفية")
+st.sidebar.header("خيارات التصفية")
 selected_domain = st.sidebar.multiselect(
     "اختر المجال التقني:",
     options=df['Domain'].unique(),
@@ -50,7 +50,7 @@ st.divider()
 c1, c2 = st.columns(2)
 
 with c1:
-    st.subheader("📈 مسار نمو الطلب على المهارات (2022 - 2024)")
+    st.subheader("مسار نمو الطلب على المهارات (2022 - 2024)")
     fig_line = px.line(
         filtered_df, 
         x='Year', 
@@ -62,7 +62,7 @@ with c1:
     st.plotly_chart(fig_line, use_container_width=True)
 
 with c2:
-    st.subheader("📊 توزيع الطلب حسب المهارة لعام 2024")
+    st.subheader(" توزيع الطلب حسب المهارة لعام 2024")
     df_2024 = filtered_df[filtered_df['Year'] == 2024]
     fig_bar = px.bar(
         df_2024, 
@@ -75,7 +75,7 @@ with c2:
     st.plotly_chart(fig_bar, use_container_width=True)
 
 st.divider()
-st.subheader("🔮 التنبؤ بالطلب المستقبلي على المهارة (2026/2027)")
+st.subheader("التنبؤ بالطلب المستقبلي على المهارة (2026/2027)")
 
 skill_to_predict = st.selectbox("اختر المهارة للتنبؤ بمستقبلها:", df['Skill'].unique())
 
